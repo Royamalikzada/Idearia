@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import apiFetch from '@wordpress/api-fetch';
 import {Link} from 'react-router-dom';
-import './ListOfLocals.css';
 
 export default function UpdateTime (props) {
 
@@ -38,7 +37,7 @@ export default function UpdateTime (props) {
                 {/* {console.log(locals)} */}
                 {locals && locals.map(local => {return (
                     <div className=' col-12 col-md-6 col-lg-4 mt-5' key={local.id}>
-                        <div className="card text-center" style={{width: "20rem"}}>
+                        <div className="card text-center" style={{width: "20rem", margin: "0 auto"}}>
                             <img src={local && local._embedded['wp:featuredmedia']['0'].source_url} className="card-img-top" style={{height: "13rem"}} alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title fw-bold">{local.title.rendered}</h5>

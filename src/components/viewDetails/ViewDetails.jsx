@@ -23,7 +23,7 @@ export default function ViewDetails() {
             {details && 
               <div className='mt-5 p-5 border border-4 rounded-3 border-warning'>
                   <div className='text-center'>
-                    <img src={ details._embedded['wp:featuredmedia']['0'].source_url} style={{width:"30rem", height:"20rem"} } className="p-2" alt="logo"/>
+                    <img src={ details._embedded['wp:featuredmedia']['0'].source_url} style={{width:"30rem", height:"20rem"} } className="p-2 detailsImage" alt="logo"/>
                     <h2>{details.title.rendered }</h2>
                   </div>
                 <p> <span className='fw-bold fs-4'> Information: </span> { details.acf.description }</p>
