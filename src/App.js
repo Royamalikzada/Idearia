@@ -12,9 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Outlet />}>
           <Route index element={<ListOfLocals />} />
-          <Route path="/:id" element={<ViewDetails />} >
-            <Route path="/:id/change" element={<EditTime />} />
-          </Route>
+          <Route path="/:id" element={<ViewDetails />} />
+          <Route path="/:detailsId/edit" element={<EditTime />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import apiFetch from '@wordpress/api-fetch';
 import {Link} from 'react-router-dom';
 import './ListOfLocals.css';
 
@@ -7,6 +8,11 @@ export default function UpdateTime (props) {
     const [locals, setLocals] = useState();
     
     useEffect(()=>{
+
+        // apiFetch( { path: 'http://prova.local/wp-json/wp/v2/local_business' } ).then( ( posts ) => {
+        //     console.log( posts );
+        // } );
+        
 
         // fetch(`http://locals.local/wp-json/wp/v2/local_business`, {
         //     method: 'GET',
